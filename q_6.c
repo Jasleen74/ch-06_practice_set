@@ -1,0 +1,16 @@
+/*6. Write a program to print the value of a variable i by using “pointer to pointer” type
+of variable.*/
+
+#include<stdio.h>
+int main() {
+     int i = 7;
+     int *j = &i;
+     int **k = &j;
+
+     printf("the value of i by i is : %d\n", i);
+     printf("the value of i via pointer is : %d\n", *j);
+     printf("the value of i by using pointer to pointer is : %d\n", ***&k);
+
+  
+ return 0;
+}
